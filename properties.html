@@ -5,63 +5,146 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>Properties in Kalyan | Royal & Loyal Real Estate</title>
+    <title>
+        Properties in Kalyan | Royal & Loyal Real Estate
+    </title>
 
-    <meta name="description"
-        content="Explore residential and commercial properties in Kalyan with Royal & Loyal Real Estate. Find apartments, family homes and commercial spaces with personal assistance.">
+    <meta
+        name="description"
+        content="Explore residential and commercial properties in Kalyan with Royal & Loyal Real Estate. Find apartments, homes and commercial spaces with personal assistance."
+    >
 
-    <meta name="keywords"
-        content="properties in Kalyan, flats in Kalyan, apartments in Kalyan, houses for sale Kalyan, commercial property Kalyan, Royal and Loyal Real Estate">
+    <meta
+        name="keywords"
+        content="properties in Kalyan, flats in Kalyan, apartments in Kalyan, houses for sale Kalyan, commercial property Kalyan, property dealer Kalyan, Royal and Loyal Real Estate"
+    >
 
-    <meta name="author" content="Harsh Kadam">
+    <meta
+        name="author"
+        content="Royal & Loyal Real Estate"
+    >
 
-    <meta name="theme-color" content="#071a33">
+    <meta
+        name="robots"
+        content="index, follow"
+    >
 
-    <meta property="og:title"
-        content="Properties in Kalyan | Royal & Loyal Real Estate">
+    <meta
+        name="theme-color"
+        content="#071a33"
+    >
 
-    <meta property="og:description"
-        content="Explore selected residential and commercial properties in Kalyan with Royal & Loyal Real Estate.">
+    <!-- OPEN GRAPH -->
 
-    <meta property="og:type" content="website">
+    <meta
+        property="og:title"
+        content="Properties in Kalyan | Royal & Loyal Real Estate"
+    >
 
-    <link rel="stylesheet" href="style.css">
+    <meta
+        property="og:description"
+        content="Explore selected residential and commercial properties in Kalyan with Royal & Loyal Real Estate."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Royal & Loyal Real Estate"
+    >
+
+    <!--
+        IMPORTANT:
+        Replace this URL if your actual GitHub Pages URL is different.
+    -->
+
+    <link
+        rel="canonical"
+        href="https://harshwebstudio.github.io/royal-loyal-real-estate/properties.html"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
 </head>
+
 
 <body>
 
 
-<!-- =========================
-     NAVBAR
-========================= -->
+<!-- ==================================================
+     NAVIGATION
+================================================== -->
 
 <header class="navbar">
 
     <div class="container nav-container">
 
-        <a href="index.html" class="logo">
-            <span class="logo-mark">R</span>
+        <a
+            href="index.html"
+            class="logo"
+            aria-label="Royal and Loyal Real Estate Home"
+        >
+
+            <span
+                class="logo-mark"
+                aria-hidden="true"
+            >
+                R
+            </span>
 
             <span class="logo-text">
-                ROYAL & LOYAL
-                <small>REAL ESTATE</small>
+
+                <strong>
+                    ROYAL &amp; LOYAL
+                </strong>
+
+                <small>
+                    REAL ESTATE
+                </small>
+
             </span>
+
         </a>
 
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+        <button
+            type="button"
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+        >
             ☰
         </button>
 
 
-        <nav class="nav-menu" id="navMenu">
+        <nav
+            class="nav-menu"
+            id="navMenu"
+            aria-label="Main navigation"
+        >
 
-            <a href="index.html">Home</a>
+            <a href="index.html">
+                Home
+            </a>
 
-            <a href="properties.html" class="active">
+            <a
+                href="properties.html"
+                class="active"
+                aria-current="page"
+            >
                 Properties
             </a>
 
@@ -69,7 +152,10 @@
                 Contact
             </a>
 
-            <a href="contact.html" class="nav-cta">
+            <a
+                href="contact.html"
+                class="nav-cta"
+            >
                 Enquire Now
             </a>
 
@@ -81,9 +167,11 @@
 
 
 
-<!-- =========================
+<!-- ==================================================
      PAGE HERO
-========================= -->
+================================================== -->
+
+<main>
 
 <section class="page-hero">
 
@@ -92,7 +180,7 @@
         <div class="page-hero-content">
 
             <span class="eyebrow">
-                ROYAL & LOYAL REAL ESTATE
+                ROYAL &amp; LOYAL REAL ESTATE
             </span>
 
             <h1>
@@ -101,8 +189,9 @@
             </h1>
 
             <p>
-                Discover carefully selected residential and commercial
-                properties in Kalyan and nearby areas.
+                Discover selected residential and commercial
+                properties in Kalyan and nearby areas with
+                personal assistance.
             </p>
 
         </div>
@@ -113,11 +202,14 @@
 
 
 
-<!-- =========================
+<!-- ==================================================
      PROPERTY SEARCH
-========================= -->
+================================================== -->
 
-<section class="property-search-section">
+<section
+    class="property-search-section"
+    aria-labelledby="property-search-title"
+>
 
     <div class="container">
 
@@ -129,14 +221,23 @@
                     FIND YOUR PROPERTY
                 </span>
 
-                <h2>
+                <h2 id="property-search-title">
                     What are you looking for?
                 </h2>
+
+                <p>
+                    Select your preferences to narrow down
+                    available property options.
+                </p>
 
             </div>
 
 
-            <form id="propertySearchForm" class="property-search-form">
+            <form
+                id="propertySearchForm"
+                class="property-search-form"
+            >
+
 
                 <div class="search-field">
 
@@ -144,7 +245,7 @@
                         Property Type
                     </label>
 
-                    <select id="propertyType">
+                    <select id="propertyType" name="propertyType">
 
                         <option value="">
                             All Types
@@ -167,13 +268,17 @@
                 </div>
 
 
+
                 <div class="search-field">
 
                     <label for="propertyLocation">
                         Location
                     </label>
 
-                    <select id="propertyLocation">
+                    <select
+                        id="propertyLocation"
+                        name="propertyLocation"
+                    >
 
                         <option value="">
                             All Locations
@@ -196,13 +301,17 @@
                 </div>
 
 
+
                 <div class="search-field">
 
                     <label for="propertyPurpose">
                         Purpose
                     </label>
 
-                    <select id="propertyPurpose">
+                    <select
+                        id="propertyPurpose"
+                        name="propertyPurpose"
+                    >
 
                         <option value="">
                             Buy or Rent
@@ -221,8 +330,21 @@
                 </div>
 
 
-                <button type="submit" class="btn btn-primary">
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
                     Search Properties
+                </button>
+
+
+                <button
+                    type="button"
+                    id="resetSearch"
+                    class="search-reset"
+                >
+                    Reset
                 </button>
 
             </form>
@@ -231,17 +353,19 @@
 
     </div>
 
-</section>
+    </section>
 
+    <!-- ==================================================
+     PROPERTY LISTINGS
+================================================== -->
 
-
-<!-- =========================
-     PROPERTIES
-========================= -->
-
-<section class="section properties-listing">
+<section
+    class="section properties-listing"
+    aria-labelledby="listings-title"
+>
 
     <div class="container">
+
 
         <div class="section-heading">
 
@@ -251,34 +375,56 @@
                     FEATURED LISTINGS
                 </span>
 
-                <h2>
+                <h2 id="listings-title">
                     Find Your Next Property
                 </h2>
 
             </div>
 
             <p>
-                Explore selected properties available
-                through Royal & Loyal Real Estate.
+                Explore selected residential and commercial
+                property opportunities available through
+                Royal &amp; Loyal Real Estate.
             </p>
 
         </div>
 
 
-        <div class="property-grid">
+        <!-- SEARCH RESULT MESSAGE -->
+
+        <div
+            id="searchStatus"
+            class="search-status"
+            aria-live="polite"
+        ></div>
 
 
+        <div
+            class="property-grid"
+            id="propertyGrid"
+        >
 
-            <!-- PROPERTY 1 -->
 
-            <article class="property-card reveal-element">
+            <!-- ==================================================
+                 PROPERTY 01
+            ================================================== -->
+
+            <article
+                class="property-card"
+                data-type="apartment"
+                data-location="kalyan-west"
+                data-purpose="buy"
+            >
 
                 <div class="property-image">
 
                     <img
                         src="images/property-1.jpg"
                         alt="Premium modern apartment in Kalyan West"
+                        width="800"
+                        height="600"
                         loading="lazy"
+                        decoding="async"
                     >
 
                     <span class="property-tag">
@@ -307,11 +453,11 @@
                     <div class="property-features">
 
                         <span>
-                            🛏 2 Beds
+                            2 Beds
                         </span>
 
                         <span>
-                            🛁 2 Baths
+                            2 Baths
                         </span>
 
                         <span>
@@ -330,8 +476,9 @@
                         <a
                             href="https://wa.me/919987475783?text=Hello%20Harsh%2C%20I%20am%20interested%20in%20the%20Premium%20Modern%20Apartment%20in%20Kalyan%20West."
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             class="property-btn"
+                            aria-label="Enquire about Premium Modern Apartment"
                         >
                             Enquire
                         </a>
@@ -344,16 +491,26 @@
 
 
 
-            <!-- PROPERTY 2 -->
+            <!-- ==================================================
+                 PROPERTY 02
+            ================================================== -->
 
-            <article class="property-card reveal-element">
+            <article
+                class="property-card"
+                data-type="apartment"
+                data-location="kalyan-east"
+                data-purpose="buy"
+            >
 
                 <div class="property-image">
 
                     <img
                         src="images/property-2.jpg"
                         alt="Luxury family residence in Kalyan East"
+                        width="800"
+                        height="600"
                         loading="lazy"
+                        decoding="async"
                     >
 
                     <span class="property-tag">
@@ -382,11 +539,11 @@
                     <div class="property-features">
 
                         <span>
-                            🛏 3 Beds
+                            3 Beds
                         </span>
 
                         <span>
-                            🛁 2 Baths
+                            2 Baths
                         </span>
 
                         <span>
@@ -405,8 +562,9 @@
                         <a
                             href="https://wa.me/919987475783?text=Hello%20Harsh%2C%20I%20am%20interested%20in%20the%20Luxury%20Family%20Residence%20in%20Kalyan%20East."
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             class="property-btn"
+                            aria-label="Enquire about Luxury Family Residence"
                         >
                             Enquire
                         </a>
@@ -419,16 +577,26 @@
 
 
 
-            <!-- PROPERTY 3 -->
+            <!-- ==================================================
+                 PROPERTY 03
+            ================================================== -->
 
-            <article class="property-card reveal-element">
+            <article
+                class="property-card"
+                data-type="commercial"
+                data-location="kalyan"
+                data-purpose="rent"
+            >
 
                 <div class="property-image">
 
                     <img
                         src="images/property-3.jpg"
                         alt="Prime commercial property in Kalyan"
+                        width="800"
+                        height="600"
                         loading="lazy"
+                        decoding="async"
                     >
 
                     <span class="property-tag">
@@ -480,8 +648,9 @@
                         <a
                             href="https://wa.me/919987475783?text=Hello%20Harsh%2C%20I%20am%20interested%20in%20the%20Prime%20Commercial%20Space%20in%20Kalyan."
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             class="property-btn"
+                            aria-label="Enquire about Prime Commercial Space"
                         >
                             Enquire
                         </a>
@@ -490,18 +659,30 @@
 
                 </div>
 
-              </article>
+            </article>
 
-                      <!-- PROPERTY 4 -->
 
-            <article class="property-card reveal-element">
+
+            <!-- ==================================================
+                 PROPERTY 04
+            ================================================== -->
+
+            <article
+                class="property-card"
+                data-type="apartment"
+                data-location="kalyan"
+                data-purpose="buy"
+            >
 
                 <div class="property-image">
 
                     <img
                         src="images/property-4.jpg"
-                        alt="Premium residential property in Kalyan"
+                        alt="Elegant urban residence in Kalyan"
+                        width="800"
+                        height="600"
                         loading="lazy"
+                        decoding="async"
                     >
 
                     <span class="property-tag">
@@ -530,11 +711,11 @@
                     <div class="property-features">
 
                         <span>
-                            🛏 2 Beds
+                            2 Beds
                         </span>
 
                         <span>
-                            🛁 2 Baths
+                            2 Baths
                         </span>
 
                         <span>
@@ -553,8 +734,9 @@
                         <a
                             href="https://wa.me/919987475783?text=Hello%20Harsh%2C%20I%20am%20interested%20in%20the%20Elegant%20Urban%20Residence%20in%20Kalyan."
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             class="property-btn"
+                            aria-label="Enquire about Elegant Urban Residence"
                         >
                             Enquire
                         </a>
@@ -563,20 +745,27 @@
 
                 </div>
 
-            </article>
+    </article>
+            <!-- ==================================================
+                 PROPERTY 05
+            ================================================== -->
 
-
-
-            <!-- PROPERTY 5 -->
-
-            <article class="property-card reveal-element">
+            <article
+                class="property-card"
+                data-type="apartment"
+                data-location="kalyan-west"
+                data-purpose="rent"
+            >
 
                 <div class="property-image">
 
                     <img
                         src="images/property-2.jpg"
-                        alt="Spacious family apartment in Kalyan"
+                        alt="Spacious family apartment in Kalyan West"
+                        width="800"
+                        height="600"
                         loading="lazy"
+                        decoding="async"
                     >
 
                     <span class="property-tag">
@@ -605,11 +794,11 @@
                     <div class="property-features">
 
                         <span>
-                            🛏 2 Beds
+                            2 Beds
                         </span>
 
                         <span>
-                            🛁 2 Baths
+                            2 Baths
                         </span>
 
                         <span>
@@ -628,8 +817,9 @@
                         <a
                             href="https://wa.me/919987475783?text=Hello%20Harsh%2C%20I%20am%20interested%20in%20the%20Spacious%20Family%20Apartment%20in%20Kalyan%20West."
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             class="property-btn"
+                            aria-label="Enquire about Spacious Family Apartment"
                         >
                             Enquire
                         </a>
@@ -642,16 +832,26 @@
 
 
 
-            <!-- PROPERTY 6 -->
+            <!-- ==================================================
+                 PROPERTY 06
+            ================================================== -->
 
-            <article class="property-card reveal-element">
+            <article
+                class="property-card"
+                data-type="commercial"
+                data-location="kalyan"
+                data-purpose="rent"
+            >
 
                 <div class="property-image">
 
                     <img
                         src="images/property-3.jpg"
-                        alt="Commercial office space in Kalyan"
+                        alt="Premium office space in Kalyan"
+                        width="800"
+                        height="600"
                         loading="lazy"
+                        decoding="async"
                     >
 
                     <span class="property-tag">
@@ -703,8 +903,9 @@
                         <a
                             href="https://wa.me/919987475783?text=Hello%20Harsh%2C%20I%20am%20interested%20in%20the%20Premium%20Office%20Space%20in%20Kalyan."
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             class="property-btn"
+                            aria-label="Enquire about Premium Office Space"
                         >
                             Enquire
                         </a>
@@ -718,29 +919,61 @@
 
         </div>
 
+
+        <!-- NO RESULTS -->
+
+        <div
+            id="noResults"
+            class="no-results"
+            hidden
+        >
+
+            <h3>
+                No matching properties found.
+            </h3>
+
+            <p>
+                Try changing your property type,
+                location or purpose.
+            </p>
+
+            <button
+                type="button"
+                id="clearFilters"
+                class="btn btn-primary"
+            >
+                View All Properties
+            </button>
+
+        </div>
+
     </div>
 
 </section>
 
 
 
-<!-- =========================
+<!-- ==================================================
      WHY CHOOSE US
-========================= -->
+================================================== -->
 
-<section class="section why-section">
+<section
+    class="section why-section"
+    aria-labelledby="why-title"
+>
 
     <div class="container">
+
 
         <div class="section-heading">
 
             <div>
 
                 <span class="eyebrow">
-                    WHY ROYAL & LOYAL
+                    WHY ROYAL &amp; LOYAL
                 </span>
 
-                <h2>
+                <h2 id="why-title">
                     Property Guidance You Can Trust
                 </h2>
 
@@ -757,7 +990,7 @@
         <div class="why-grid">
 
 
-            <div class="why-item reveal-element">
+            <article class="why-item">
 
                 <div class="why-number">
                     01
@@ -772,10 +1005,10 @@
                     around Kalyan and nearby locations.
                 </p>
 
-            </div>
+            </article>
 
 
-            <div class="why-item reveal-element">
+            <article class="why-item">
 
                 <div class="why-number">
                     02
@@ -790,10 +1023,10 @@
                     your property enquiry and decision process.
                 </p>
 
-            </div>
+            </article>
 
 
-            <div class="why-item reveal-element">
+            <article class="why-item">
 
                 <div class="why-number">
                     03
@@ -808,40 +1041,41 @@
                     requirements and next steps.
                 </p>
 
-            </div>
+            </article>
 
 
         </div>
 
     </div>
 
-</section>
+    </section>
+<!-- ==================================================
+     CALL TO ACTION
+================================================== -->
 
-
-
-<!-- =========================
-     CTA
-========================= -->
-
-<section class="cta-section">
+<section
+    class="cta-section"
+    aria-labelledby="cta-title"
+>
 
     <div class="container">
 
         <div class="cta-box">
 
-            <div>
+            <div class="cta-content">
 
                 <span class="eyebrow">
                     READY TO FIND YOUR PROPERTY?
                 </span>
 
-                <h2>
+                <h2 id="cta-title">
                     Let's Find the Right Property for You.
                 </h2>
 
                 <p>
                     Tell us what you are looking for and
-                    get personal assistance from our team.
+                    get personal assistance from Royal &amp;
+                    Loyal Real Estate.
                 </p>
 
             </div>
@@ -852,7 +1086,7 @@
                 <a
                     href="https://wa.me/919987475783?text=Hello%20Harsh%2C%20I%20want%20help%20finding%20a%20property."
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     class="btn btn-light"
                 >
                     WhatsApp Us
@@ -874,11 +1108,13 @@
 
 </section>
 
+</main>
 
 
-<!-- =========================
+
+<!-- ==================================================
      FOOTER
-========================= -->
+================================================== -->
 
 <footer class="footer">
 
@@ -887,17 +1123,33 @@
         <div class="footer-grid">
 
 
+            <!-- BRAND -->
+
             <div class="footer-brand">
 
-                <a href="index.html" class="logo">
+                <a
+                    href="index.html"
+                    class="logo"
+                    aria-label="Royal and Loyal Real Estate Home"
+                >
 
-                    <span class="logo-mark">
+                    <span
+                        class="logo-mark"
+                        aria-hidden="true"
+                    >
                         R
                     </span>
 
                     <span class="logo-text">
-                        ROYAL & LOYAL
-                        <small>REAL ESTATE</small>
+
+                        <strong>
+                            ROYAL &amp; LOYAL
+                        </strong>
+
+                        <small>
+                            REAL ESTATE
+                        </small>
+
                     </span>
 
                 </a>
@@ -914,15 +1166,16 @@
                     <a
                         href="https://instagram.com/harshwebdesignerrr11"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                     >
                         Instagram
                     </a>
 
+
                     <a
                         href="https://wa.me/919987475783"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                     >
                         WhatsApp
                     </a>
@@ -932,6 +1185,8 @@
             </div>
 
 
+
+            <!-- QUICK LINKS -->
 
             <div class="footer-links">
 
@@ -954,6 +1209,8 @@
             </div>
 
 
+
+            <!-- CONTACT -->
 
             <div class="footer-links">
 
@@ -988,7 +1245,7 @@
 
             <p>
                 © <span data-year></span>
-                Royal & Loyal Real Estate.
+                Royal &amp; Loyal Real Estate.
                 All Rights Reserved.
             </p>
 
@@ -1000,28 +1257,36 @@
 
     </div>
 
-</footer>
+    </footer>
 
-
-
-<!-- =========================
+    <!-- ==================================================
      FLOATING WHATSAPP
-========================= -->
+================================================== -->
 
 <a
-    href="https://wa.me/919987475783?text=Hello%20Harsh%2C%20I%20am%20interested%20in%20your%20real%20estate properties."
+    href="https://wa.me/919987475783?text=Hello%20Harsh%2C%20I%20am%20interested%20in%20your%20real%20estate%20properties."
     class="floating-whatsapp"
     target="_blank"
-    rel="noopener"
-    aria-label="Chat on WhatsApp"
+    rel="noopener noreferrer"
+    aria-label="Chat with Royal and Loyal Real Estate on WhatsApp"
 >
     WhatsApp
 </a>
 
 
 
-<script src="script.js"></script>
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script
+    src="script.js"
+    defer
+></script>
+
 
 </body>
 
-      </html>
+</html>
+    
+            
