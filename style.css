@@ -2064,3 +2064,211 @@ textarea {
         width: 100%;
     }
 }
+/* ==========================================
+   ROYAL & LOYAL — PREMIUM CONTACT ACTIONS
+========================================== */
+
+.contact-actions-section {
+    padding: 95px 0;
+    background:
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(18, 100, 163, 0.07),
+            transparent 38%
+        ),
+        var(--ivory);
+}
+
+.contact-actions-heading {
+    max-width: 700px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.contact-actions-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(34px, 5vw, 49px);
+    line-height: 1.2;
+    color: var(--navy);
+}
+
+.contact-actions-heading h2 span {
+    display: block;
+    color: var(--teal);
+}
+
+.contact-actions-heading p {
+    max-width: 520px;
+    margin: 15px auto 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.contact-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-action-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    min-width: 0;
+    min-height: 112px;
+    padding: 22px;
+    overflow: hidden;
+
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 17px;
+
+    box-shadow: 0 8px 25px rgba(7, 26, 51, 0.045);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.contact-action-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    bottom: 18px;
+    width: 3px;
+    border-radius: 0 4px 4px 0;
+    background: var(--contact-accent, var(--teal));
+}
+
+.contact-action-card:hover {
+    border-color: var(--contact-accent, var(--teal));
+    box-shadow: 0 12px 30px rgba(7, 26, 51, 0.09);
+}
+
+.contact-action-icon {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    background: var(--contact-tint, #e7f5f3);
+    color: var(--contact-accent, var(--teal));
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.contact-action-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.contact-action-text strong {
+    color: var(--navy);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.contact-action-text small {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.contact-action-arrow {
+    flex: 0 0 auto;
+    color: var(--contact-accent, var(--teal));
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.instagram-card {
+    --contact-accent: #a13f83;
+    --contact-tint: #f8edf5;
+}
+
+.call-card {
+    --contact-accent: #1264a3;
+    --contact-tint: #eaf3fb;
+}
+
+.whatsapp-card {
+    --contact-accent: #168653;
+    --contact-tint: #e8f7ee;
+}
+
+.email-card {
+    --contact-accent: #c34a43;
+    --contact-tint: #fbeeed;
+}
+
+.contact-actions-note {
+    margin-top: 28px;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Keyboard accessibility */
+.contact-action-card:focus-visible {
+    outline: 3px solid var(--teal);
+    outline-offset: 4px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .contact-actions-section {
+        padding: 70px 0;
+    }
+
+    .contact-actions-heading {
+        margin-bottom: 30px;
+    }
+
+    .contact-actions-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .contact-action-card {
+        min-height: 94px;
+        padding: 17px;
+        gap: 13px;
+        border-radius: 14px;
+    }
+
+    .contact-action-icon {
+        flex-basis: 46px;
+        width: 46px;
+        height: 46px;
+        font-size: 24px;
+        border-radius: 12px;
+    }
+
+    .contact-action-text strong {
+        font-size: 15px;
+    }
+
+    .contact-action-text small {
+        font-size: 11px;
+    }
+
+    .contact-action-arrow {
+        font-size: 18px;
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .contact-action-card {
+        transition: none;
+    }
+   }
